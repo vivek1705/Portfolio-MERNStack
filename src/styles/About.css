@@ -1,0 +1,168 @@
+.about-section {
+  padding: 50px 20px;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+.about-section h2,
+.about-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.about-section p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+/* Skills Section */
+.skills-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.skill-card {
+  background: var(--card-background-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: 1px solid steelblue;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Dark shadow */
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+/* Experience Section */
+.experience-section {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+.experience-line {
+  position: absolute;
+  left: 25px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--primary-color);
+}
+
+.experience-item {
+  display: flex;
+  align-items:initial;
+  margin-bottom: 20px;
+}
+
+.experience-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  margin-right: 15px;
+  position: relative;
+  left: -28px; /* Align with the line */
+}
+
+.experience-details {
+  background: var(--card-background-color);
+  color: var(--text-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Dark shadow */
+}
+
+.experience-details h4 {
+  margin-bottom: 1px;
+  font-size: 1.1rem;
+  color: hotpink;
+}
+
+.experience-details h5 {
+    margin-bottom: 1px;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+}
+
+.experience-details h6 {
+  margin-bottom: 2px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+.experience-details span {
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+}
+
+/* Education Section */
+.education-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.education-card {
+  background: var(--card-background-color);
+  color: var(--text-color);
+  padding: 10px;
+  border: 1px solid steelblue;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Dark shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+.education-card h4 {
+  font-size: 1.2rem;
+  color: hotpink;
+}
+
+.education-card p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.education-card span {
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-cards,
+  .education-cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .experience-section {
+    padding-left: 30px;
+  }
+
+  .experience-dot {
+    width: 12px;
+    height: 12px;
+    left: -6px; /* Align with the line */
+  }
+}

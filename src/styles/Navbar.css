@@ -1,0 +1,95 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 10px 3px 10px;
+    background: var(--background-color);
+    color: var(--text-color);
+    position: sticky;
+    top: 0;
+    margin-bottom:20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar-logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .menu-toggle {
+    display: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    cursor:pointer;
+    
+  }
+  
+  .nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+  }
+  
+ 
+
+.nav-button:hover {
+  color: var(--primary-color);
+}
+
+  /* Small Screen Styles */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      width: 50%;
+      height: 460px;
+      top: 55px;
+      right: 0;
+      top: 40px;
+      background:#222;
+      padding: 10px 20px;
+      border-radius: 0 0 0 50px ;
+      border-left: 1px solid var(--primary-color); 
+    border-bottom: 1px solid var(--primary-color);
+      box-shadow: 0 10px 12px rgba(10, 0, 0, 50);
+      gap: 5px;
+      text-align:center;
+   }
+    
+    .nav-links.open {
+      display: flex;
+      
+    }
+  
+    .nav-links li {
+      margin-bottom: 10px;
+    }
+  
+    .nav-links a {
+      font-size: 1.2rem;
+    }
+  }
+  
