@@ -27,7 +27,7 @@ const Contact = () => {
     );
 
     // Replace with your WhatsApp number
-    const whatsappNumber = "1234567890"; // Add your WhatsApp number here
+    const whatsappNumber = "+91 9763189395"; // Add your WhatsApp number here
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
     // Redirect to WhatsApp
